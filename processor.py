@@ -12,6 +12,7 @@ class Processor(Base):
     def __init__(self):
         super(Processor, self).__init__()
         self.word_dict = load_dict()
+        self.count_processor = 0
 
     def input_x(self, text):
         '''
@@ -39,5 +40,6 @@ class Processor(Base):
         '''
         输出的结果，会被dataset.to_categorys(data)调用
         '''
-
+        self.count_processor +=1
+        print('self.count_processor', self.count_processor)
         return data[0]

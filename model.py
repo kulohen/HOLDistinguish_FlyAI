@@ -12,6 +12,7 @@ class Model(Base):
     def __init__(self, data):
         self.data = data
         self.model_path = os.path.join(MODEL_PATH, TENSORFLOW_MODEL_DIR)
+        self.count_predict = 0
 
     def predict(self, **data):
         '''
@@ -30,6 +31,8 @@ class Model(Base):
             x_data = self.data.predict_data(**data)
             feed_dict = {input_x: x_data, keep_prob: 1.0}
             predict = session.run(y_pred, feed_dict=feed_dict)
+        self.count_predict +=1
+        print('self.count_predict' ,self.count_predict)
 
         return self.data.to_categorys(predict)
 
@@ -48,6 +51,7 @@ class Model(Base):
 
                 predict = self.data.to_categorys(predict)
                 ratings.append(predict)
+            print('predict datas : ', len(ratings))
         return ratings
 
     def save_model(self, session, path, name=TENSORFLOW_MODEL_DIR, overwrite=False):

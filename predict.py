@@ -8,4 +8,5 @@ dataset = Dataset()
 model = Model(dataset)
 
 result = model.predict(text="you'r a good boy!")
+result = model.predict(text="you'r a good boy!")
 print(result)
