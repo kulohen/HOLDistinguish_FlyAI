@@ -31,8 +31,9 @@ class Model(Base):
             x_data = self.data.predict_data(**data)
             feed_dict = {input_x: x_data, keep_prob: 1.0}
             predict = session.run(y_pred, feed_dict=feed_dict)
+            print('predict = session.run(y_pred, feed_dict=feed_dict)',predict)
         self.count_predict +=1
-        print('self.count_predict' ,self.count_predict)
+        # print('self.count_predict' ,self.count_predict)
 
         return self.data.to_categorys(predict)
 
@@ -51,6 +52,8 @@ class Model(Base):
 
                 predict = self.data.to_categorys(predict)
                 ratings.append(predict)
+                # ratings.append(2)
+            print('self.count_predict', self.count_predict)
             print('predict datas : ', len(ratings))
         return ratings
 
