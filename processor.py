@@ -34,12 +34,14 @@ class Processor(Base):
         # 0 - hate speech
         # 1 - offensive language
         # 2 - neither
-        return int(label)
+        one_hot_label = numpy.zeros([3])  ##生成全0矩阵
+        one_hot_label[label] = 1  ##相应标签位置置
+        return one_hot_label
 
     def output_y(self, data):
         '''
         输出的结果，会被dataset.to_categorys(data)调用
         '''
         self.count_processor +=1
-        print('self.count_processor', self.count_processor)
-        return data[0]
+        # print('self.count_processor', self.count_processor)
+        return numpy.argmax(data)

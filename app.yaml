@@ -3,14 +3,14 @@
 # 项目的名字
 name: 仇恨言论识别
 # 项目的作者
-author: Honay
+author: wangyi
 # 项目的描述
 description: 查看短文，并确定它是否包含仇恨言论
 # 项目使用的网络
 algorithm: CNN
 language: python3
 # 项目使用的框架
-framework: tensorflow
+framework: keras
 
 # 使用的数据集
 data:

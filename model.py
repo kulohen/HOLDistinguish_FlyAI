@@ -4,14 +4,16 @@ import tensorflow as tf
 from flyai.model.base import Base
 from path import MODEL_PATH
 from tensorflow.python.saved_model import tag_constants
+from keras.engine.saving import load_model
 
-TENSORFLOW_MODEL_DIR = "best"
-
+KERAS_MODEL_NAME = "model.h5"
 
 class Model(Base):
-    def __init__(self, data):
-        self.data = data
-        self.model_path = os.path.join(MODEL_PATH, TENSORFLOW_MODEL_DIR)
+    def __init__(self, dataset):
+        self.dataset = dataset
+        self.model_path = os.path.join(MODEL_PATH, KERAS_MODEL_NAME)
+        if os.path.exists(self.model_path):
+            self.model = load_model(self.model_path)
         self.count_predict = 0
 
     def predict(self, **data):
@@ -22,63 +24,27 @@ class Model(Base):
         :param data: 模型的输入参数
         :return:
         '''
-        with tf.Session() as session:
-            tf.saved_model.loader.load(session, [tag_constants.SERVING], self.model_path)
-            input_x = session.graph.get_tensor_by_name(self.get_tensor_name('input_x'))
-            y_pred = session.graph.get_tensor_by_name(self.get_tensor_name('score/y_pred'))
-            keep_prob = session.graph.get_tensor_by_name(self.get_tensor_name('keep_prob'))
-
-            x_data = self.data.predict_data(**data)
-            feed_dict = {input_x: x_data, keep_prob: 1.0}
-            predict = session.run(y_pred, feed_dict=feed_dict)
-            # print('predict = session.run(y_pred, feed_dict=feed_dict)',predict)
+        if self.model is None:
+            self.model = load_model(self.model_path)
+        data = self.model.predict(self.dataset.predict_data(**data))
+        data = self.dataset.to_categorys(data)
         self.count_predict +=1
         # print('self.count_predict' ,self.count_predict)
 
-        return self.data.to_categorys(predict)
+        return data
 
     def predict_all(self, datas):
-        with tf.Session() as session:
-            tf.saved_model.loader.load(session, [tag_constants.SERVING], self.model_path)
-            input_x = session.graph.get_tensor_by_name(self.get_tensor_name('input_x'))
-            y_pred = session.graph.get_tensor_by_name(self.get_tensor_name('score/y_pred'))
-            keep_prob = session.graph.get_tensor_by_name(self.get_tensor_name('keep_prob'))
+        if self.model is None:
+            self.model = load_model(self.model_path)
+        labels = []
+        for data in datas:
+            data = self.model.predict(self.dataset.predict_data(**data))
+            data = self.dataset.to_categorys(data)
+            labels.append(data)
+        print('predict datas : ', len(labels))
+        return labels
 
-            ratings = []
-            for data in datas:
-                x_data = self.data.predict_data(**data)
-                feed_dict = {input_x: x_data, keep_prob: 1.0}
-                predict = session.run(y_pred, feed_dict=feed_dict)
+    def save_model(self, model, path, name=KERAS_MODEL_NAME, overwrite=False):
+        super().save_model(model, path, name, overwrite)
+        model.save(os.path.join(path, name))
 
-                predict = self.data.to_categorys(predict)
-                ratings.append(predict)
-                # ratings.append(2)
-            print('self.count_predict', self.count_predict)
-            print('predict datas : ', len(ratings))
-        return ratings
-
-    def save_model(self, session, path, name=TENSORFLOW_MODEL_DIR, overwrite=False):
-        '''
-        保存模型
-        :param session: 训练模型的sessopm
-        :param path: 要保存模型的路径
-        :param name: 要保存模型的名字
-        :param overwrite: 是否覆盖当前模型
-        :return:
-        '''
-        if overwrite:
-            self.delete_file(path)
-
-        builder = tf.saved_model.builder.SavedModelBuilder(os.path.join(path, name))
-        builder.add_meta_graph_and_variables(session, [tf.saved_model.tag_constants.SERVING])
-        builder.save()
-
-    def get_tensor_name(self, name):
-        return name + ":0"
-
-    def delete_file(self, path):
-        for root, dirs, files in os.walk(path, topdown=False):
-            for name in files:
-                os.remove(os.path.join(root, name))
-            for name in dirs:
-                os.rmdir(os.path.join(root, name))
