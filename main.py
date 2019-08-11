@@ -66,6 +66,7 @@ model_cnn.compile(loss='categorical_crossentropy',
               optimizer=Adam(lr=learning_rate),
               metrics=['acc'])
 
+lr_level=2
 best_score_by_acc = 0.
 best_score_by_loss = 999.
 x_val, y_val =dataset.get_all_validation_data()
@@ -84,9 +85,17 @@ for step in range(dataset.get_step()):
         )
         print('class-%d __ loss :%.4f , acc :%.4f' %(iters ,history_test[0],history_test[1]))
     # save best acc
-    if this_epoch_loss_and_acc.history['loss'][0] <0.1 and best_score_by_acc <  this_epoch_loss_and_acc.history['val_acc'][0] :
+    if this_epoch_loss_and_acc.history['loss'][0] <0.2 and best_score_by_acc <  this_epoch_loss_and_acc.history['val_acc'][0] :
         model.save_model(model=model_cnn, path=MODEL_PATH, overwrite=True)
         best_score_by_acc = this_epoch_loss_and_acc.history['val_acc'][0]
         best_score_by_loss = this_epoch_loss_and_acc.history['val_loss'][0]
         print('【保存】了最佳模型by val_acc : %.4f' %best_score_by_acc)
 
+    if this_epoch_loss_and_acc.history['loss'][0] <0.2 and lr_level==2:
+        model_cnn.compile(loss='categorical_crossentropy',
+                      optimizer=SGD(lr=0.0001),
+                      metrics=['accuracy'])
+        print('【学习率】调整为 : 0,0001')
+        lr_level = 3
+print('best_score_by_acc :%.4f' %best_score_by_acc)
+print('best_score_by_loss :%.4f' %best_score_by_loss)
