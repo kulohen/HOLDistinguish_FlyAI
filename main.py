@@ -46,10 +46,10 @@ for epoch in range(3):
     y_train_slice.append(y_1)
     x_val_slice.append(x_2)
     y_val_slice.append(y_2)
-    print('class-', epoch, 'x_train.shape', x_1.shape)
-    print('class-', epoch, 'y_train.shape', y_1.shape)
-    print('class-', epoch, 'x_val.shape', x_2.shape)
-    print('class-', epoch, 'y_val.shape', y_2.shape)
+    # print('class-', epoch, 'x_train.shape', x_1.shape)
+    # print('class-', epoch, 'y_train.shape', y_1.shape)
+    # print('class-', epoch, 'x_val.shape', x_2.shape)
+    # print('class-', epoch, 'y_val.shape', y_2.shape)
 
 # 超参
 vocab_size = 20655      # 总词汇量

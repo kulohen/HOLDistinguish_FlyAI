@@ -31,7 +31,7 @@ class Model(Base):
             x_data = self.data.predict_data(**data)
             feed_dict = {input_x: x_data, keep_prob: 1.0}
             predict = session.run(y_pred, feed_dict=feed_dict)
-            print('predict = session.run(y_pred, feed_dict=feed_dict)',predict)
+            # print('predict = session.run(y_pred, feed_dict=feed_dict)',predict)
         self.count_predict +=1
         # print('self.count_predict' ,self.count_predict)
 
