@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e90523-4176-403b-bbef-a656c9d0b3c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/HOLDistinguish_FlyAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HOLDistinguish_FlyAI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -17,8 +17,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="101" column="57" lean-forward="true" selection-start-line="101" selection-start-column="57" selection-end-line="101" selection-end-column="57" />
+            <state relative-caret-position="648">
+              <caret line="84" column="31" lean-forward="true" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+              <folding>
+                <element signature="e#84#99#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/flyai/dataset.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="197" column="49" selection-start-line="197" selection-start-column="49" selection-end-line="197" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -27,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="468">
-                <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <first_editor relative-caret-position="234">
+                <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -61,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="594">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="e#24#36#0" expanded="true" />
               </folding>
@@ -142,6 +154,27 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Google App Engine SDK" type="70bed36:NamedLibraryElementNode" />
             </path>
+            <path>
+              <item name="HOLDistinguish_FlyAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Google App Engine SDK" type="70bed36:NamedLibraryElementNode" />
+              <item name="wangyi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HOLDistinguish_FlyAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Google App Engine SDK" type="70bed36:NamedLibraryElementNode" />
+              <item name="wangyi" type="462c0819:PsiDirectoryNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HOLDistinguish_FlyAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Google App Engine SDK" type="70bed36:NamedLibraryElementNode" />
+              <item name="wangyi" type="462c0819:PsiDirectoryNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="HOLDistinguish_FlyAI" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -164,8 +197,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\29125\PycharmProjects\HOLDistinguish_FlyAI" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="C:\Users\29125\PycharmProjects\HOLDistinguish_FlyAI" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,7 +322,8 @@
       <workItem from="1565480451401" duration="1577000" />
       <workItem from="1565497802831" duration="9795000" />
       <workItem from="1565569801123" duration="3947000" />
-      <workItem from="1565618995463" duration="949000" />
+      <workItem from="1565618995463" duration="1022000" />
+      <workItem from="1565647808995" duration="2946000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1565377197150</created>
@@ -333,11 +367,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565536752431</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="keras版本 V4">
+      <created>1565626573743</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1565626573743</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28919000" />
+    <option name="totallyTimeSpent" value="31938000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,12 +393,12 @@
     <frame x="83" y="32" width="2477" height="1408" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49156627" visible="true" weight="0.12225445" />
-      <window_info id="Structure" order="1" sideWeight="0.50843376" side_tool="true" visible="true" weight="0.12225445" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49036145" visible="true" weight="0.16701202" />
+      <window_info id="Structure" order="1" sideWeight="0.50963855" side_tool="true" visible="true" weight="0.16701202" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49979278" visible="true" weight="0.33064517" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49979278" visible="true" weight="0.33064517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -384,11 +425,12 @@
     <MESSAGE value="v2" />
     <MESSAGE value="v3 88%" />
     <MESSAGE value="keras版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="keras版本" />
+    <MESSAGE value="keras版本 V4" />
+    <option name="LAST_COMMIT_MESSAGE" value="keras版本 V4" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HOLDistinguish_FlyAI$predict.coverage" NAME="predict Coverage Results" MODIFIED="1565536654154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HOLDistinguish_FlyAI$main.coverage" NAME="main Coverage Results" MODIFIED="1565619730345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HOLDistinguish_FlyAI$main.coverage" NAME="main Coverage Results" MODIFIED="1565651021141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HOLDistinguish_FlyAI$WangyiUtilOnFlyai.coverage" NAME="WangyiUtilOnFlyai Coverage Results" MODIFIED="1565459127500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -409,7 +451,6 @@
     </entry>
     <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/tensorflow/_api/v1/nn/__init__.py" />
     <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py" />
-    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/flyai/dataset.py" />
     <entry file="file://$PROJECT_DIR$/data/output/logs/events.out.tfevents.1565377867.wangyiUBUNTU" />
     <entry file="file://$PROJECT_DIR$/data/input/wangyi-test-classfy-0.csv" />
     <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/keras/layers/embeddings.py" />
@@ -463,16 +504,6 @@
     <entry file="file://$PROJECT_DIR$/transformation.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#24#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -483,20 +514,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main-4.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="e#24#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="468">
-            <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <first_editor relative-caret-position="234">
+            <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/flyai/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="197" column="49" selection-start-line="197" selection-start-column="49" selection-end-line="197" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="101" column="57" lean-forward="true" selection-start-line="101" selection-start-column="57" selection-end-line="101" selection-end-column="57" />
+        <state relative-caret-position="648">
+          <caret line="84" column="31" lean-forward="true" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+          <folding>
+            <element signature="e#84#99#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

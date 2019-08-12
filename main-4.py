@@ -14,7 +14,6 @@ import WangyiUtilOnFlyai as wangyi
 from keras.layers import Input, Dense , Embedding,Conv1D ,MaxPooling1D ,Flatten ,Dropout
 from keras.models import Model ,Sequential
 from keras.optimizers import SGD,Adam,RMSprop
-import numpy as np
 
 '''
 项目中的超参
@@ -86,21 +85,7 @@ for step in range(args.EPOCHS):
     cur_step = str(step + 1) + "/" + str(args.EPOCHS)
     print('\n步骤'+cur_step)
 
-    # TODO 改造每个batch从每类提取batch个
-    # x_3 , y_3 = x_train ,y_train
-    x_3, y_3 =[],[]
-    for iters in range(numclass):
-        xx_tmp_train , yy_tmp_train = dataset_slice[iters].next_train_batch()
-        # 合并3类train
-        x_3.append(xx_tmp_train)
-        y_3.append(yy_tmp_train)
-    x_3 = np.concatenate(x_3, axis=0)
-    y_3 = np.concatenate(y_3, axis=0)
-    print('x_3.shape',x_3.shape)
-    print('y_3.shape',y_3.shape)
-
-
-    this_epoch_loss_and_acc = model_cnn.fit(x=x_3, y=y_3, validation_data=(x_val, y_val),
+    this_epoch_loss_and_acc = model_cnn.fit(x=x_train, y=y_train, validation_data=(x_val, y_val),
                                             batch_size=args.BATCH ,epochs=1,verbose=2,
                                             class_weight=cw_train)
 
