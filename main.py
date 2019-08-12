@@ -51,9 +51,9 @@ kernel_size = 5         # 卷积核尺寸
 learning_rate = 1e-3    # 学习率
 numclass = 3            # 类别数
 cw_train = {
-    0:13,
+    0:1,
     1:1,
-    2:4
+    2:1
 }
 eval_weights = {
     0:1,
@@ -86,8 +86,6 @@ for step in range(args.EPOCHS):
     cur_step = str(step + 1) + "/" + str(args.EPOCHS)
     print('\n步骤'+cur_step)
 
-    # TODO 改造每个batch从每类提取batch个
-    # x_3 , y_3 = x_train ,y_train
     x_3, y_3 =[],[]
     for iters in range(numclass):
         xx_tmp_train , yy_tmp_train = dataset_slice[iters].next_train_batch()
@@ -96,9 +94,6 @@ for step in range(args.EPOCHS):
         y_3.append(yy_tmp_train)
     x_3 = np.concatenate(x_3, axis=0)
     y_3 = np.concatenate(y_3, axis=0)
-    print('x_3.shape',x_3.shape)
-    print('y_3.shape',y_3.shape)
-
 
     this_epoch_loss_and_acc = model_cnn.fit(x=x_3, y=y_3, validation_data=(x_val, y_val),
                                             batch_size=args.BATCH ,epochs=1,verbose=2,
