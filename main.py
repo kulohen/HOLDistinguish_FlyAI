@@ -19,7 +19,7 @@ from keras.optimizers import SGD,Adam,RMSprop
 项目中的超参
 '''
 parser = argparse.ArgumentParser()
-parser.add_argument("-e", "--EPOCHS", default=20, type=int, help="train epochs")
+parser.add_argument("-e", "--EPOCHS", default=200, type=int, help="train epochs")
 parser.add_argument("-b", "--BATCH", default=64, type=int, help="batch size")
 args = parser.parse_args()
 
@@ -49,7 +49,17 @@ num_filters = 256       # 卷积核数目
 kernel_size = 5         # 卷积核尺寸
 learning_rate = 1e-3    # 学习率
 numclass = 3            # 类别数
-
+cw_train = {
+    0:13,
+    1:1,
+    2:4
+}
+eval_weights = {
+    0:1,
+    1:1.,
+    2:1.,
+}
+eval_weights_count = 3 # 应该是eval_weights的3个求和
 
 model_cnn = Sequential()
 model_cnn.add(Embedding(vocab_size, embedding_dim, input_length=max_seq_len))
@@ -76,7 +86,11 @@ for step in range(args.EPOCHS):
     print('\n步骤'+cur_step)
 
     this_epoch_loss_and_acc = model_cnn.fit(x=x_train, y=y_train, validation_data=(x_val, y_val),
-                                            batch_size=args.BATCH ,epochs=1,verbose=2)
+                                            batch_size=args.BATCH ,epochs=1,verbose=2,
+                                            class_weight=cw_train)
+
+    sum_loss = 0.
+    sum_acc = 0.
     for iters in range(numclass):
         history_test = model_cnn.evaluate(
             x=x_val_slice[iters],
@@ -85,11 +99,16 @@ for step in range(args.EPOCHS):
             verbose=2
         )
         print('class-%d __ loss :%.4f , acc :%.4f' %(iters ,history_test[0],history_test[1]))
+        sum_loss += history_test[0] * eval_weights[iters]
+        sum_acc += history_test[1] * eval_weights[iters]
+
+    print('步骤 %d / %d: 自定义 val_loss is %.4f, val_acc is %.4f\n' %(step+1,args.EPOCHS, sum_loss/eval_weights_count , sum_acc/eval_weights_count))
+
     # save best acc
-    if this_epoch_loss_and_acc.history['acc'][0] > 0.9 and best_score_by_acc <  this_epoch_loss_and_acc.history['val_acc'][0] :
+    if this_epoch_loss_and_acc.history['acc'][0] > 0.9 and best_score_by_acc <  sum_acc / eval_weights_count :
         model.save_model(model=model_cnn, path=MODEL_PATH, overwrite=True)
-        best_score_by_acc = this_epoch_loss_and_acc.history['val_acc'][0]
-        best_score_by_loss = this_epoch_loss_and_acc.history['val_loss'][0]
+        best_score_by_acc = sum_acc / eval_weights_count
+        best_score_by_loss = sum_loss / eval_weights_count
         print('【保存】了最佳模型by val_acc : %.4f' %best_score_by_acc)
 
     if this_epoch_loss_and_acc.history['loss'][0] <0.2 and lr_level==2:
