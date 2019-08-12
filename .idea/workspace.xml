@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33e90523-4176-403b-bbef-a656c9d0b3c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main-3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HOLDistinguish_FlyAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HOLDistinguish_FlyAI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/input/dev.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/input/dev.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,32 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
-              <folding>
-                <element signature="e#84#99#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="290">
+              <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main-2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WangyiUtilOnFlyai.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="196" selection-start-line="196" selection-end-line="196" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="308">
+                <caret line="26" selection-start-line="26" selection-end-line="26" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -45,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="171">
               <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
             </state>
           </provider>
@@ -54,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/path.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="171">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
@@ -68,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+            <state relative-caret-position="618">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#24#36#0" expanded="true" />
               </folding>
@@ -80,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
+            <state relative-caret-position="38">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="e#26#35#0" expanded="true" />
@@ -94,29 +91,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="9e1f6b8c-ffa8-4efc-ad6e-148b42468cdb" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/predict.py" />
         <option value="$PROJECT_DIR$/WangyiUtilOnFlyai.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/path.py" />
         <option value="$PROJECT_DIR$/processor.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1321" />
-    <option name="y" value="32" />
-    <option name="width" value="1239" />
-    <option name="height" value="1408" />
+    <option name="x" value="240" />
+    <option name="y" value="128" />
+    <option name="width" value="1440" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -124,6 +118,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,22 +133,38 @@
             </path>
             <path>
               <item name="HOLDistinguish_FlyAI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HOLDistinguish_FlyAI" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="HOLDistinguish_FlyAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Google App Engine SDK" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="HOLDistinguish_FlyAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Google App Engine SDK" type="70bed36:NamedLibraryElementNode" />
+              <item name="29125" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HOLDistinguish_FlyAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Google App Engine SDK" type="70bed36:NamedLibraryElementNode" />
+              <item name="29125" type="462c0819:PsiDirectoryNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HOLDistinguish_FlyAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Google App Engine SDK" type="70bed36:NamedLibraryElementNode" />
+              <item name="29125" type="462c0819:PsiDirectoryNode" />
+              <item name="PycharmProjects" type="462c0819:PsiDirectoryNode" />
               <item name="HOLDistinguish_FlyAI" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,10 +179,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\29125\PycharmProjects\HOLDistinguish_FlyAI" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -295,6 +307,7 @@
       <workItem from="1565457912646" duration="1258000" />
       <workItem from="1565480451401" duration="1577000" />
       <workItem from="1565497802831" duration="9795000" />
+      <workItem from="1565569801123" duration="3947000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1565377197150</created>
@@ -342,7 +355,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24023000" />
+    <option name="totallyTimeSpent" value="27970000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,15 +367,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="32" width="2477" height="1408" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49458483" visible="true" weight="0.22254455" />
-      <window_info id="Structure" order="1" sideWeight="0.50541514" side_tool="true" visible="true" weight="0.22254455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4926004" visible="true" weight="0.22520107" />
+      <window_info id="Structure" order="1" sideWeight="0.50739956" side_tool="true" visible="true" weight="0.22520107" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49979278" weight="0.33145162" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49979278" weight="0.33144477" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -371,7 +384,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002072" side_tool="true" weight="0.33064517" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32983872" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33002833" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -393,8 +406,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/HOLDistinguish_FlyAI$predict.coverage" NAME="predict Coverage Results" MODIFIED="1565536654154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HOLDistinguish_FlyAI$main.coverage" NAME="main Coverage Results" MODIFIED="1565536670408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/HOLDistinguish_FlyAI$WangyiUtilOnFlyai.coverage" NAME="WangyiUtilOnFlyai Coverage Results" MODIFIED="1565459127500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HOLDistinguish_FlyAI$main.coverage" NAME="main Coverage Results" MODIFIED="1565580937691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/input/dev.csv">
@@ -403,20 +416,8 @@
           <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-1172" />
-      </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-896">
-          <caret line="818" column="30" selection-start-line="818" selection-start-column="30" selection-end-line="818" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/tensorflow/python/client/session.py" />
     <entry file="file://$PROJECT_DIR$/data/input/words.dict">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -424,56 +425,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/tensorflow/_api/v1/nn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1206">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#189#245#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="2501" column="4" selection-start-line="2501" selection-start-column="4" selection-end-line="2501" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/flyai/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/logs/events.out.tfevents.1565377867.wangyiUBUNTU">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/input/wangyi-test-classfy-0.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="198">
-            <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/keras/layers/embeddings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="76" column="32" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/tensorflow/_api/v1/nn/__init__.py" />
+    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py" />
+    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/flyai/dataset.py" />
+    <entry file="file://$PROJECT_DIR$/data/output/logs/events.out.tfevents.1565377867.wangyiUBUNTU" />
+    <entry file="file://$PROJECT_DIR$/data/input/wangyi-test-classfy-0.csv" />
+    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/keras/layers/embeddings.py" />
     <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -484,36 +441,6 @@
     <entry file="file://$PROJECT_DIR$/flyai">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#26#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-          <folding>
-            <element signature="e#24#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transformation.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -521,51 +448,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main-2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.flyai/env/lib/python3.6/site-packages/keras/engine/training.py" />
+    <entry file="file://$PROJECT_DIR$/main-2.py" />
+    <entry file="file://$PROJECT_DIR$/WangyiUtilOnFlyai.py" />
     <entry file="file://$PROJECT_DIR$/predict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="171">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transformation.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#26#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        <state relative-caret-position="200">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WangyiUtilOnFlyai.py">
+    <entry file="file://$PROJECT_DIR$/processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        <state relative-caret-position="618">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#24#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main-3.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
-          <folding>
-            <element signature="e#84#99#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="290">
+          <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="308">
+            <caret line="26" selection-start-line="26" selection-end-line="26" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

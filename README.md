@@ -18,3 +18,9 @@ class- 2 x_train.shape (2922, 34)
 class- 2 y_train.shape (2922,)
 class- 2 x_val.shape (821, 34)
 class- 2 y_val.shape (821,)
+
+predict
+class0 0.48
+class1 68.44
+class2 4.89
+

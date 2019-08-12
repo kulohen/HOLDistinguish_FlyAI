@@ -69,14 +69,13 @@ model_cnn.compile(loss='categorical_crossentropy',
 lr_level=2
 best_score_by_acc = 0.
 best_score_by_loss = 999.
-x_train, y_train ,x_val, y_val= dataset.get_all_processor_data()
-# x_val, y_val =dataset.get_all_validation_data()
-for step in range(args.EPOCHS):
-    cur_step = str(step + 1) + "/" + str(args.EPOCHS)
+x_val, y_val =dataset.get_all_validation_data()
+for step in range(dataset.get_step()):
+    cur_step = str(step + 1) + "/" + str(dataset.get_step())
     print('\n步骤'+cur_step)
+    x_train, y_train = dataset.next_train_batch()
 
-    this_epoch_loss_and_acc = model_cnn.fit(x=x_train, y=y_train, validation_data=(x_val, y_val),
-                                            batch_size=args.BATCH ,epochs=1,verbose=2)
+    this_epoch_loss_and_acc = model_cnn.fit(x=x_train, y=y_train, validation_data=(x_val, y_val), epochs=1,verbose=2)
     for iters in range(numclass):
         history_test = model_cnn.evaluate(
             x=x_val_slice[iters],
@@ -86,7 +85,7 @@ for step in range(args.EPOCHS):
         )
         print('class-%d __ loss :%.4f , acc :%.4f' %(iters ,history_test[0],history_test[1]))
     # save best acc
-    if this_epoch_loss_and_acc.history['acc'][0] > 0.9 and best_score_by_acc <  this_epoch_loss_and_acc.history['val_acc'][0] :
+    if this_epoch_loss_and_acc.history['acc'][0] > 0.99 and best_score_by_acc <  this_epoch_loss_and_acc.history['val_acc'][0] :
         model.save_model(model=model_cnn, path=MODEL_PATH, overwrite=True)
         best_score_by_acc = this_epoch_loss_and_acc.history['val_acc'][0]
         best_score_by_loss = this_epoch_loss_and_acc.history['val_loss'][0]
