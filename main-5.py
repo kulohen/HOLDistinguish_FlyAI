@@ -69,9 +69,7 @@ model_cnn.add(MaxPooling1D(1))
 
 model_cnn.add(Flatten())
 model_cnn.add(Dense(hidden_dim, activation='relu'))
-# model_cnn.add(Dropout(0.5))
-model_cnn.add(Dense(hidden_dim, activation='relu'))
-# model_cnn.add(Dropout(0.5))
+model_cnn.add(Dropout(0.5))
 model_cnn.add(Dense(numclass, activation='softmax'))
 
 model_cnn.summary()
