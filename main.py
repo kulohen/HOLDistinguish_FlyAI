@@ -2,7 +2,7 @@
 """
 Created on Mon Oct 30 19:44:02 2017
 
-@author: user
+@author: wangyi
 """
 
 import argparse
@@ -17,7 +17,14 @@ from keras.optimizers import SGD,Adam,RMSprop
 import numpy as np
 
 '''
-项目中的超参
+2019-8-15 
+自定义结果weight 1:6:3
+save by loss
+
+2019-8-14 
+添加一层dense
+放弃dropout
+平衡输入3类batch
 '''
 parser = argparse.ArgumentParser()
 parser.add_argument("-e", "--EPOCHS", default=200, type=int, help="train epochs")
@@ -44,7 +51,7 @@ for epoch in range(3):
 # 超参
 vocab_size = 20655      # 总词汇量
 embedding_dim = 64      # 嵌入层大小
-hidden_dim = 1024        # Dense层大小
+hidden_dim = 512        # Dense层大小
 max_seq_len = 34        # 最大句长
 num_filters = 256       # 卷积核数目
 kernel_size = 5         # 卷积核尺寸
@@ -57,10 +64,10 @@ cw_train = {
 }
 eval_weights = {
     0:1,
-    1:1.,
-    2:1.,
+    1:6.,
+    2:3.,
 }
-eval_weights_count = 3 # 应该是eval_weights的3个求和
+eval_weights_count = 10 # 应该是eval_weights的3个求和
 
 model_cnn = Sequential()
 model_cnn.add(Embedding(vocab_size, embedding_dim, input_length=max_seq_len))
@@ -121,12 +128,12 @@ for step in range(args.EPOCHS):
 
     print('步骤 %d / %d: 自定义 val_loss is %.4f, val_acc is %.4f\n' %(step+1,args.EPOCHS, sum_loss/eval_weights_count , sum_acc/eval_weights_count))
 
-    # save best acc
-    if this_epoch_loss_and_acc.history['acc'][0] > 0.9 and best_score_by_acc <  sum_acc / eval_weights_count :
+    # save best loss
+    if this_epoch_loss_and_acc.history['acc'][0] > 0.9 and best_score_by_loss >  sum_loss / eval_weights_count :
         model.save_model(model=model_cnn, path=MODEL_PATH, overwrite=True)
         best_score_by_acc = sum_acc / eval_weights_count
         best_score_by_loss = sum_loss / eval_weights_count
-        print('【保存】了最佳模型by val_acc : %.4f' %best_score_by_acc)
+        print('【保存】了最佳模型by eval_loss : %.4f' %best_score_by_loss)
 
     if this_epoch_loss_and_acc.history['loss'][0] <0.3 and lr_level==2:
         model_cnn.compile(loss='categorical_crossentropy',
